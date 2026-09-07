@@ -46,7 +46,7 @@ BOOL WINAPI CtrlHandler(DWORD fdwCtrlType) {
                 TerminateProcess(currentfp->hProcess, 0);
                 return TRUE; 
             }
-            printf("\nMyShell> ");
+            printf("\nNTNShell> ");
             return TRUE;
     	default:
         	return FALSE;
@@ -225,6 +225,7 @@ int main(){
 		
 		else if (strcmp(input, "help") == 0) {
             printf("Cac lenh dac biet: help, date, time, dir, list, path, addpath\n");
+            printf("Doc file README.md de biet them chi tiet");
         }
         
 	    else if (strcmp(input, "list") == 0) {
